@@ -3,16 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://masood2004.github.io/mern-chat-internee",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "axios": "^1.5.1",
     "classnames": "^2.3.2",
+    "gh-pages": "^6.0.0",
     "lodash": "^4.17.21",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
